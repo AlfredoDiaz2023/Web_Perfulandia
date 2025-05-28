@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - ✨PerfulandiaSPA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .team-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #f8f9fa;
+            margin-bottom: 15px;
+        }
+        .btn-add-cart {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            transition: all 0.3s;
+        }
+        .btn-add-cart:hover {
+            background-color: #ff5252;
+            transform: translateY(-2px);
+        }
+        .product-card {
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-black shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="/index.html">✨PerfulandiaSPA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav me-auto">
+                    <a class="nav-link text-white" href="/index.html">Inicio</a>
+                    <a class="nav-link text-white" href="/productos.html">Productos</a>
+                    <a class="nav-link active text-white" href="/nosotros.html">Nosotros</a>
+                    <a class="nav-link text-white" href="/contacto.html">Contacto</a>
+                </div>
+                <div class="d-flex flex-column flex-lg-row gap-2">
+                    <a class = "btn" id="btn_notificaciones">🔔</a>
+                    <a class="btn btn-outline-success" href="/login.html" id="btn_login">Iniciar Sesión</a>
+                    <a class="btn btn-outline-danger" href="/registro.html" id="btn_registro">Registrarse</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h1 class="text-center mb-4">✨Productos</h1>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <!-- Producto 1 -->
+            <div class="col">
+                <div class="card h-100 border-0 product-card">
+                    <img src="/assets/eros_flame.webp" class="card-img-top mx-auto" style="max-height: 250px; width: auto;" alt="Eros Flame">
+                    <div class="card-body">
+                        <h5 class="card-title">Versace Eros Flame</h5>
+                        <p class="card-text text-success fw-bold">$89.900</p>
+                        <button class="btn btn-add-cart w-100" data-price="89900">🛒 Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Producto 2 -->
+            <div class="col">
+                <div class="card h-100 border-0 product-card">
+                    <img src="/assets/eros.jpg" class="card-img-top mx-auto" style="max-height: 250px; width: auto;" alt="Eros">
+                    <div class="card-body">
+                        <h5 class="card-title">Versace Eros</h5>
+                        <p class="card-text text-success fw-bold">$85.500</p>
+                        <button class="btn btn-add-cart w-100" data-price="85500">🛒 Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Producto 3 -->
+            <div class="col">
+                <div class="card h-100 border-0 product-card">
+                    <img src="/assets/1millon.webp" class="card-img-top mx-auto" style="max-height: 250px; width: auto;" alt="Armani">
+                    <div class="card-body">
+                        <h5 class="card-title">Paco Rabanne One Millon EDT</h5>
+                        <p class="card-text text-success fw-bold">$92.700</p>
+                        <button class="btn btn-add-cart w-100" data-price="92700">🛒 Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Producto 4 -->
+            <div class="col">
+                <div class="card h-100 border-0 product-card">
+                    <img src="/assets/9pm.webp" class="card-img-top mx-auto" style="max-height: 250px; width: auto;" alt="Dior">
+                    <div class="card-body">
+                        <h5 class="card-title">Afnan 9 PM</h5>
+                        <p class="card-text text-success fw-bold">$60.000</p>
+                        <button class="btn btn-add-cart w-100" data-price="60000">🛒 Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Producto 5 -->
+            <div class="col">
+                <div class="card h-100 border-0 product-card">
+                    <img src="/assets/creed.webp" class="card-img-top mx-auto" style="max-height: 250px; width: auto;" alt="Creed">
+                    <div class="card-body">
+                        <h5 class="card-title">Creed Aventus</h5>
+                        <p class="card-text text-success fw-bold">$345.900</p>
+                        <button class="btn btn-add-cart w-100" data-price="345900">🛒 Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Producto 6 -->
+            <div class="col">
+                <div class="card h-100 border-0 product-card">
+                    <img src="/assets/erbapura.webp" class="card-img-top mx-auto" style="max-height: 250px; width: auto;" alt="Erba Pura">
+                    <div class="card-body">
+                        <h5 class="card-title">Xerjoff Erba Pura</h5>
+                        <p class="card-text text-success fw-bold">$349.990</p>
+                        <button class="btn btn-add-cart w-100" data-price="349990">🛒 Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Producto 7 -->
+            <div class="col">
+                <div class="card h-100 border-0 product-card">
+                    <img src="/assets/king.webp" class="card-img-top mx-auto" style="max-height: 250px; width: auto;" alt="King">
+                    <div class="card-body">
+                        <h5 class="card-title">Dolce & Gabbana King</h5>
+                        <p class="card-text text-success fw-bold">$99.900</p>
+                        <button class="btn btn-add-cart w-100" data-price="99900">🛒 Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Producto 8 -->
+            <div class="col">
+                <div class="card h-100 border-0 product-card">
+                    <img src="/assets/leyton.webp" class="card-img-top mx-auto" style="max-height: 250px; width: auto;" alt="leyton">
+                    <div class="card-body">
+                        <h5 class="card-title">Marly Leyton</h5>
+                        <p class="card-text text-success fw-bold">$374.900</p>
+                        <button class="btn btn-add-cart w-100" data-price="374900">🛒 Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Producto 9 -->
+            <div class="col">
+                <div class="card h-100 border-0 product-card">
+                    <img src="/assets/lightblue.jpg" class="card-img-top mx-auto" style="max-height: 250px; width: auto;" alt="lightblue">
+                    <div class="card-body">
+                        <h5 class="card-title">Dolce & Gabbana ligth blue</h5>
+                        <p class="card-text text-success fw-bold">$59.900</p>
+                        <button class="btn btn-add-cart w-100" data-price="59900">🛒 Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Producto 10 -->
+            <div class="col">
+                <div class="card h-100 border-0 product-card">
+                    <img src="/assets/Profondo.jpg" class="card-img-top mx-auto" style="max-height: 250px; width: auto;" alt="Profondo">
+                    <div class="card-body">
+                        <h5 class="card-title">Acqua Di Giò Profondo</h5>
+                        <p class="card-text text-success fw-bold">$99.900</p>
+                        <button class="btn btn-add-cart w-100" data-price="99900">🛒 Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Producto 11 -->
+            <div class="col">
+                <div class="card h-100 border-0 product-card">
+                    <img src="/assets/sauvage.jpg" class="card-img-top mx-auto" style="max-height: 250px; width: auto;" alt="Sauvage">
+                    <div class="card-body">
+                        <h5 class="card-title">Dior Sauvage</h5>
+                        <p class="card-text text-success fw-bold">$119.900</p>
+                        <button class="btn btn-add-cart w-100" data-price="119900">🛒 Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Producto 12 -->
+            <div class="col">
+                <div class="card h-100 border-0 product-card">
+                    <img src="/assets/Starwalker.webp" class="card-img-top mx-auto" style="max-height: 250px; width: auto;" alt="Starwalker">
+                    <div class="card-body">
+                        <h5 class="card-title">Starwalker Montblanc</h5>
+                        <p class="card-text text-success fw-bold">$39.900</p>
+                        <button class="btn btn-add-cart w-100" data-price="39000">🛒 Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Cierre del row -->
+    </div> <!-- Cierre del container -->
+    <h3>Total en el carrito: $<span id="total-price">0</span></h3>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+
+
+//----------------------------------------CARRITO FALSO-------------------------------------------
+    let totalPrice = 0;
+    // Obtener todos los botones de agregar al carrito
+    const addCartButtons = document.querySelectorAll('.btn-add-cart');
+    addCartButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const price = parseInt(this.getAttribute('data-price')); // Obtener precio numérico
+        totalPrice += price; // Sumar el precio al total
+        document.getElementById('total-price').innerText = totalPrice.toLocaleString(); // Actualizar el total en el carrito
+      });
+    });
+  </script>
+
+
+
+
+
+  <footer class="bg-body-tertiary text-center bottom">
+        <div class="container p-4"></div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2025 Todos los derechos reservados.
+        </div>
+    </footer>
+</body>
+</html>
